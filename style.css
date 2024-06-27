@@ -1,0 +1,56 @@
+@font-face{
+    font-family: iran;
+    src: url(../fonts/iran.ttf);
+}
+*{
+    direction:rtl;
+    font-family: iran;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body{
+    font-size:12px;
+    margin:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+height: 100vh;
+background: linear-gradient(90deg, #c00,#faa000);
+}
+.search{
+    height: 50px;
+position: relative;
+}
+.search .input{
+    font-family: iran;
+    font-size: 18px;
+    padding: 5px 10px;
+    height: 50px;
+    width: 20px;
+    border: none;
+    transition: width .8s ease;
+}
+.search.active .input{
+    width: 300px;
+
+}
+.search .btn{
+    padding: 15px;
+    border: none;
+    background: #fff;
+    position: absolute;
+    top: 0;
+right: 0;
+width: 50px;
+height: 50px;
+cursor: pointer;
+transition: right .4s ease;
+font-size: 24px;
+}
+
+.search.active .btn{
+    right: 300px;
+} 
